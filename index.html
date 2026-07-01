@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Roberto Riaño Hidalgo — AI Security Researcher</title>
+  <meta name="description" content="Roberto Riaño Hidalgo — PhD Candidate in AI Security at Ikerlan and Radboud University. Research on adversarial machine learning, backdoor attacks, generative AI security, spiking neural networks, and world models." />
+  <meta name="author" content="Roberto Riaño Hidalgo" />
+  <meta name="theme-color" content="#05070d" />
+  <link rel="canonical" href="https://roberto-rh.github.io/" />
+
+  <!-- Open Graph / social cards -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://roberto-rh.github.io/" />
+  <meta property="og:title" content="Roberto Riaño Hidalgo — AI Security Researcher" />
+  <meta property="og:description" content="PhD Candidate in AI Security. Adversarial ML · backdoor attacks · generative AI security · spiking neural networks · world models." />
+  <meta property="og:image" content="https://roberto-rh.github.io/assets/img/og.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Roberto Riaño Hidalgo — AI Security Researcher" />
+  <meta name="twitter:description" content="PhD Candidate in AI Security. Adversarial ML · backdoor attacks · generative AI security · spiking neural networks · world models." />
+  <meta name="twitter:image" content="https://roberto-rh.github.io/assets/img/og.png" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Speed up the anime.js module fetch -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+
+  <link rel="stylesheet" href="assets/css/styles.css?v=5" />
+
+  <!-- Set .js as early as possible so reveal-on-scroll elements start hidden only when JS can reveal them (no FOUC, no content lost if JS fails). -->
+  <script>
+    document.documentElement.classList.remove('no-js');
+    document.documentElement.classList.add('js');
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#about">Skip to content</a>
+
+  <!-- Animated neural-network particle background -->
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="hero-spotlight" aria-hidden="true"></div>
+
+  <!-- ============ NAV ============ -->
+  <header class="site-header" id="site-header">
+    <nav class="nav" aria-label="Primary">
+      <a class="brand" href="#home" aria-label="Home">
+        <span class="brand-prompt">&gt;_</span>
+        <span class="brand-name">roberto<span class="brand-accent">.rh</span></span>
+      </a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#about" data-nav><span class="nav-idx">01.</span> about</a></li>
+        <li><a href="#experience" data-nav><span class="nav-idx">02.</span> experience</a></li>
+        <li><a href="#publications" data-nav><span class="nav-idx">03.</span> publications</a></li>
+        <li><a href="#contact" data-nav><span class="nav-idx">04.</span> contact</a></li>
+        <li><a class="nav-cv" href="assets/pdf/cv.pdf" target="_blank" rel="noopener">cv.pdf ↓</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home">
+      <div class="hero-inner">
+        <div class="terminal" id="hero-terminal" role="img" aria-label="Roberto Riaño Hidalgo, PhD Candidate in AI Security">
+          <div class="terminal-bar">
+            <span class="dot dot-r"></span>
+            <span class="dot dot-y"></span>
+            <span class="dot dot-g"></span>
+            <span class="terminal-title">roberto@security: ~</span>
+          </div>
+          <div class="terminal-body">
+            <p class="term-line term-1">
+              <span class="prompt">visitor@rrh</span><span class="sep">:</span><span class="path">~</span><span class="sep">$ </span><span class="cmd" data-type="whoami"></span><span class="type-caret" data-caret="1">▋</span>
+            </p>
+
+            <h1 class="hero-name glitch hero-anim" data-text="Roberto Riaño Hidalgo" aria-hidden="false">Roberto Riaño Hidalgo</h1>
+
+            <p class="term-line term-2 hero-anim">
+              <span class="prompt">visitor@rrh</span><span class="sep">:</span><span class="path">~</span><span class="sep">$ </span><span class="cmd-static">./focus --now</span>
+            </p>
+            <p class="role-line hero-anim">
+              <span class="role-arrow">↳</span>
+              <span class="role-text" id="role-rotator">Adversarial Machine Learning</span><span class="caret">▋</span>
+            </p>
+
+            <p class="hero-tagline term-3 hero-anim">
+              PhD Candidate exploring the security &amp; robustness of machine learning systems
+              at <strong>Ikerlan</strong> &amp; <strong>Radboud University</strong>.
+            </p>
+
+            <div class="hero-badges">
+              <span class="badge hero-anim">Adversarial ML</span>
+              <span class="badge hero-anim">Backdoor Attacks</span>
+              <span class="badge hero-anim">Generative AI Security</span>
+              <span class="badge hero-anim">Spiking Neural Networks</span>
+              <span class="badge hero-anim">World Models</span>
+            </div>
+
+            <div class="hero-cta">
+              <a class="btn btn-primary hero-anim" href="#about">explore<span class="btn-arrow"> →</span></a>
+              <a class="btn btn-ghost hero-anim" href="https://www.linkedin.com/in/roberto-rh" target="_blank" rel="noopener">LinkedIn</a>
+              <a class="btn btn-ghost hero-anim" href="assets/pdf/cv.pdf" target="_blank" rel="noopener">Download CV</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a class="scroll-cue hero-anim" href="#about" aria-label="Scroll to content">
+        <span class="scroll-cue-text">scroll</span>
+        <span class="scroll-cue-line"></span>
+      </a>
+    </section>
+
+    <!-- ============ ABOUT / RESEARCH ============ -->
+    <section class="section" id="about">
+      <div class="section-head reveal">
+        <span class="section-index">// 01</span>
+        <h2 class="section-title">about<span class="title-cursor">_</span></h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-copy reveal">
+          <p>
+            I'm a <strong>PhD candidate in AI Security</strong>, jointly at
+            <strong>Ikerlan</strong> and <strong>Radboud University</strong>. My research sits at the
+            intersection of machine learning and security. I design <em>backdoor</em> attacks
+            that expose how models break, and probe the limits of the defenses meant to stop them.
+          </p>
+          <p>
+            Before the PhD I earned an <strong>MSc in Computational Engineering &amp; Intelligent
+            Systems</strong> and a <strong>BSc in Computer Engineering</strong> (CS specialization),
+            both at <strong>UPV/EHU</strong>.
+          </p>
+        </div>
+
+        <div class="focus-list">
+          <article class="focus-card reveal" data-stagger>
+            <span class="focus-num">001</span>
+            <h3>Adversarial ML</h3>
+            <p>Crafting and defending against perturbations that fool models with changes the eye can't see.</p>
+          </article>
+          <article class="focus-card reveal" data-stagger>
+            <span class="focus-num">002</span>
+            <h3>Backdoor Attacks</h3>
+            <p>Poisoned pipelines and hidden triggers that silently compromise a model's integrity.</p>
+          </article>
+          <article class="focus-card reveal" data-stagger>
+            <span class="focus-num">003</span>
+            <h3>Generative AI Security</h3>
+            <p>Probing the safety, alignment, and robustness of generative models.</p>
+          </article>
+          <article class="focus-card reveal" data-stagger>
+            <span class="focus-num">004</span>
+            <h3>Spiking Neural Networks</h3>
+            <p>Brain-inspired, event-driven models (SNNs) that compute with spikes over time.</p>
+          </article>
+          <article class="focus-card reveal" data-stagger>
+            <span class="focus-num">005</span>
+            <h3>World Models</h3>
+            <p>Learned internal simulators that let agents predict, imagine, and plan before they act.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE & EDUCATION ============ -->
+    <section class="section" id="experience">
+      <div class="section-head reveal">
+        <span class="section-index">// 02</span>
+        <h2 class="section-title">experience<span class="title-cursor">_</span></h2>
+      </div>
+
+      <!-- Rendered from the EXPERIENCE array in assets/js/main.js -->
+      <ol class="timeline" id="timeline-exp" aria-label="Work experience timeline">
+        <li class="timeline-fallback">Loading experience…</li>
+      </ol>
+
+      <div class="section-head reveal subhead">
+        <span class="section-index">// 02 · edu</span>
+        <h2 class="section-title">education<span class="title-cursor">_</span></h2>
+      </div>
+
+      <!-- Rendered from the EDUCATION array in assets/js/main.js -->
+      <ol class="timeline" id="timeline-edu" aria-label="Education timeline">
+        <li class="timeline-fallback">Loading education…</li>
+      </ol>
+    </section>
+
+    <!-- ============ PUBLICATIONS ============ -->
+    <section class="section" id="publications">
+      <div class="section-head reveal">
+        <span class="section-index">// 03</span>
+        <h2 class="section-title">publications<span class="title-cursor">_</span></h2>
+      </div>
+
+      <div class="pub-stats reveal">
+        <div class="stat">
+          <span class="stat-num" data-count="2">0</span>
+          <span class="stat-label">publications</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num" data-count="2024">0</span>
+          <span class="stat-label">PhD since</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num" data-count="5">0</span>
+          <span class="stat-label">research areas</span>
+        </div>
+      </div>
+
+      <!-- Rendered from the PUBLICATIONS array in assets/js/main.js -->
+      <div class="pub-list" id="pub-list">
+        <p class="pub-fallback">Loading publications…</p>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section" id="contact">
+      <div class="section-head reveal">
+        <span class="section-index">// 04</span>
+        <h2 class="section-title">contact<span class="title-cursor">_</span></h2>
+      </div>
+
+      <div class="contact-card reveal">
+        <div class="terminal contact-terminal">
+          <div class="terminal-bar">
+            <span class="dot dot-r"></span>
+            <span class="dot dot-y"></span>
+            <span class="dot dot-g"></span>
+            <span class="terminal-title">contact — bash</span>
+          </div>
+          <div class="terminal-body">
+            <p class="term-line"><span class="prompt">visitor@rrh</span><span class="sep">:</span><span class="path">~</span><span class="sep">$ </span><span class="cmd-static">cat contact.txt</span></p>
+            <p class="contact-intro">Open to research collaborations, talks, and good conversations about ML security. Reach me here:</p>
+
+            <ul class="contact-links">
+              <li class="reveal" data-stagger>
+                <a href="https://www.linkedin.com/in/roberto-ria%C3%B1o-hidalgo-655695234/" target="_blank" rel="noopener">
+                  <span class="contact-key">linkedin</span><span class="contact-val">roberto-riaño-hidalgo</span>
+                </a>
+              </li>
+              <li class="reveal" data-stagger>
+                <a href="https://github.com/Yencr0s" target="_blank" rel="noopener">
+                  <span class="contact-key">github</span><span class="contact-val">@Yencr0s</span>
+                </a>
+              </li>
+              <li class="reveal" data-stagger>
+                <a href="mailto:roberto.rianohidalgo@ru.nl">
+                  <span class="contact-key">email</span><span class="contact-val">roberto.rianohidalgo@ru.nl</span>
+                </a>
+              </li>
+              <li class="reveal" data-stagger>
+                <a href="https://scholar.google.com/citations?user=grqXt3oAAAAJ&amp;hl=en" target="_blank" rel="noopener">
+                  <span class="contact-key">scholar</span><span class="contact-val">view profile ↗</span>
+                </a>
+              </li>
+              <li class="reveal" data-stagger>
+                <a href="https://orcid.org/0009-0007-6479-8815" target="_blank" rel="noopener">
+                  <span class="contact-key">orcid</span><span class="contact-val">0009-0007-6479-8815</span>
+                </a>
+              </li>
+            </ul>
+
+            <div class="contact-cta">
+              <a class="btn btn-primary" href="assets/pdf/cv.pdf" target="_blank" rel="noopener">Download CV<span class="btn-arrow"> ↓</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>
+      <span class="footer-prompt">&gt;_</span>
+      Built by Roberto Riaño Hidalgo · animations by
+      <a href="https://animejs.com" target="_blank" rel="noopener">anime.js</a> ·
+      <span id="footer-year">2026</span>
+    </p>
+    <p class="footer-sub">No trackers. No cookies. Just photons.</p>
+  </footer>
+
+  <script type="module" src="assets/js/main.js?v=5"></script>
+</body>
+</html>
