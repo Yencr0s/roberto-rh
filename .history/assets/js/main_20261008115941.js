@@ -83,7 +83,7 @@ const PUBLICATIONS = [
   {
     year: '2025',
     title: 'Flashy Backdoor: Real-world Environment Backdoor Attack on SNNs with DVS Cameras',
-    authors: ['R. Riaño', 'G. Abad', 'S. Picek', 'A. Urbieta'],
+    authors: ['Roberto Riaño Hidalgo', 'Gorka Abad', 'Stjepan Picek', 'Aitor Urbieta'],
     venue: 'IEEE Annual Computer Security Applications Conference (ACSAC) · Honolulu, HI · 2025 · pp. 986–1002',
     tag: 'peer-reviewed',
     links: [
@@ -94,7 +94,7 @@ const PUBLICATIONS = [
   {
     year: '2025',
     title: 'SoK: The Last Line of Defense — On Backdoor Defense Evaluation',
-    authors: ['G. Abad', 'M. Krček', 'S. Koffas', 'B. Tajalli', 'M. Arazzi', 'R. Riaño', 'X. Xu', 'Z. Liu', 'et al.'],
+    authors: ['G. Abad', 'M. Krček', 'S. Koffas', 'B. Tajalli', 'M. Arazzi', 'Roberto Riaño Hidalgo', 'X. Xu', 'Z. Liu', 'et al.'],
     venue: 'arXiv preprint · arXiv:2511.13143 · 2025',
     tag: 'preprint',
     links: [
@@ -104,7 +104,7 @@ const PUBLICATIONS = [
   {
     year: '2026',
     title: 'When the World Lies: Backdoor Attacks on Latent World Models for Downstream Control',
-    authors: ['R. Riaño', 'G. Abad', 'S. Picek', 'A. Urbieta'],
+    authors: ['Roberto Riaño Hidalgo', 'Gorka Abad', 'Stjepan Picek', 'Aitor Urbieta'],
     venue: 'Under review · arXiv preprint · 2026',
     tag: 'under review',
     links: [
@@ -114,7 +114,7 @@ const PUBLICATIONS = [
   {
     year: '2026',
     title: 'Temporal Poisoning: Clean-Label Backdoors via Event Redistribution in SNNs',
-    authors: ['R. Riaño', 'G. Abad', 'S. Picek', 'A. Urbieta'],
+    authors: ['Roberto Riaño Hidalgo', 'Gorka Abad', 'Stjepan Picek', 'Aitor Urbieta'],
     venue: 'Under review · arXiv preprint · 2026',
     tag: 'under review',
     links: [
@@ -124,7 +124,7 @@ const PUBLICATIONS = [
   {
     year: '2026',
     title: 'MeMark: Membrane-Space Watermarking for Spiking Neural Networks',
-    authors: ['R. Riaño', 'G. Abad', 'S. Picek', 'A. Urbieta'],
+    authors: ['Roberto Riaño Hidalgo', 'Gorka Abad', 'Stjepan Picek', 'Aitor Urbieta'],
     venue: 'arXiv preprint · arXiv:2608.25738 · 2026',
     tag: 'preprint',
     links: [
@@ -133,7 +133,7 @@ const PUBLICATIONS = [
   },
 ];
 
-const ME = 'R. Riaño'; // used to bold your name in author lists
+const ME = 'Roberto Riaño Hidalgo'; // used to bold your name in author lists
 
 /* ====================== ENVIRONMENT / HELPERS ====================== */
 
